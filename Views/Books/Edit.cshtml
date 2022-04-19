@@ -1,0 +1,49 @@
+﻿@model MVCBooks.Models.Book
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 style="text-shadow: 3px 3px white;">Chỉnh Sửa</h1>
+
+<h4 style="color: white; font-size: 30px;">Khóa Học</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4" style="background-color: #426EB4; width: 200%; height: 200%; border-radius: 25px; box-shadow: 0 0 25px #ccc; ">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group" style="color: white; font-size: 20px;">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="color: white; font-size: 20px;">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="color: white; font-size: 20px;">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="color: white; font-size: 20px;">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" style="background-color: white; color: #000;" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" style="color: white; font-size:20px;">Trở Lại</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
