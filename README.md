@@ -1,5 +1,5 @@
 ### Huỳnh Hồ Nam
-## #CTT14CĐ3A
+### CTT14CĐ3A
 # Chào mừng đến vói website của Hồ Nam
 # Các công nghệ sử dụng
 1. Asp.net core MVC
