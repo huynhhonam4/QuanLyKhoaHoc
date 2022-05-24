@@ -5,7 +5,7 @@
 1. Asp.net core MVC
 2. EF Core
 3. Bootstrap
-## 1.Đây là phần giao diện
+## 1. Đây là phần giao diện
 ![tramg-chu](https://i.postimg.cc/vTKnbJN7/trangchu.png)
 ## 2. Đây là phần liên hệ
 ![lien-he](https://i.postimg.cc/FFPPq1Dc/lien-he.png)
